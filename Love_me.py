@@ -31,8 +31,6 @@ def inside_heart(x,y):
 
     return (x*x + y*y - 1)**3 - x*x*y**3
 
-
-
 random.seed(10)
 
 for y in range(220, -290, -23):
@@ -50,8 +48,18 @@ for y in range(220, -290, -23):
 
             pen.goto(x, y)
             pen.color(random.choice([
-                "#ff3333"
-                "#ff4444"
-                "#ff2222"
-                "#ff6662"
+                "#ff3333",
+                "#ff4444",
+                "#ff5555",
+                "#ff2222",
+                "#ff6666",
             ]))
+
+pen.write( message, align="left", font=("Arial", font_size, "bold"))
+x += text_width + 11
+
+screen.update()
+time.sleep(0.06)
+
+screen.update()
+turtle.done()
