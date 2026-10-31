@@ -46,4 +46,12 @@ for y in range(220, -290, -23):
 
         central_x = x + text_width / 2
 
-        
+        if (inside_heart(x, y) and inside_heart(x + text_width, y) and inside_heart(central_x, y)):
+
+            pen.goto(x, y)
+            pen.color(random.choice([
+                "#ff3333"
+                "#ff4444"
+                "#ff2222"
+                "#ff6662"
+            ]))
