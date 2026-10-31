@@ -13,3 +13,7 @@ pen = turtle.Turtle()
 pen.hideturtle()
 pen.penup()
 pen.speed(0)
+
+love = [
+    "I Love you", "Te amo"
+]
