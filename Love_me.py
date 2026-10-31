@@ -30,7 +30,20 @@ def inside_heart(x,y):
     y = y / 280
 
     return (x*x + y*y - 1)**3 - x*x*y**3
-<= 0
+
 
 
 random.seed(10)
+
+for y in range(220, -290, -23):
+    x = -340
+
+    while x < 340:
+        message = random.choice(love)
+        font_size = 11
+
+        text_width = len(message) * 7
+
+        central_x = x + text_width / 2
+
+        
