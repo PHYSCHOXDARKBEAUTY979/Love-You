@@ -15,10 +15,6 @@ clock = pygame.time.Clock()
 RED = (255, 65, 65)
 BLACK =(0, 0, 0)
 
-pen = turtle.Turtle()
-pen.hideturtle()
-pen.penup()
-pen.speed(0)
 
 love = [
     "I Love you", "Te amo", "Je t'aime", "Eu te amo",
@@ -52,23 +48,11 @@ while x < 370:
         message = random.choice(love)
         font_size = 11
 
-        text_width = len(message) * 7
+        text_width = len(love) * 7
 
         central_x = x + text_width / 2
 
         if (heart(x, y) and heart(x + text_width, y) and heart(central_x, y)):
-
-            pen.goto(x, y)
-            pen.color(random.choice([
-                "#ff3333",
-                "#ff4444",
-                "#ff5555",
-                "#ff2222",
-                "#ff6666",
-            ]))
-
-pen.write( message, align="left", font=("Arial", font_size, "bold"))
-x += text_width + 11
 
 current = 0
 frame = 0
